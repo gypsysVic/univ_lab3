@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --main-color: #ff3f40;
+    --text-color: #585858;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f6f2f2;
+}
+
+.container {
+    max-width: 1250px;
+    display: block;
+    margin: 0 auto;
+}
+
+header nav {
+    display: block;
+    margin: 28px auto;
+    background-color: #313030;
+}
+
+header nav .menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav .menu li {
+    padding: 33px 40px;
+    transition: 0.4s all;
+}
+
+header nav .menu li:hover {
+    background-color: var(--main-color);
+    transition: 0.4s all;
+}
+
+header nav .menu li .menu-link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.promo {
+    padding: 70px 0;
+    min-height: 360px;
+}
+
+.promo .promo-text {
+    max-width: 600px;
+    float: left;
+}
+
+.promo .promo-text h1 {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.promo .promo-text p {
+    margin-top: 35px;
+    width: 520px;
+}
+
+.promo .promo-text .btn {
+    display: block;
+    margin-top: 60px;
+    width: 230px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    line-height: 53px;
+    height: 53px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.4s all;
+}
+
+.promo .promo-text .btn:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    transition: 0.4s all;
+    border: 1px solid var(--main-color);
+}
+
+
+.promo .promo-video {
+    max-width: 600px;
+    float: right;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.provide {
+    background-color: #fff;
+    min-height: 490px;
+    padding: 110px 0;
+    position: relative;
+}
+
+.provide .provide-text {
+    width: 50%;
+    float: left;
+}
+
+.provide .provide-text h2 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 55px;
+    margin: 0;
+}
+
+.provide .provide-text p {
+    width: 520px;
+}
+
+.provide .provide-text .btn {
+    display: block;
+    margin-top: 60px;
+    width: 230px;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    text-align: center;
+    line-height: 53px;
+    height: 53px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s all;
+    font-weight: 600;
+}
+
+.provide .provide-text .btn:hover {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.4s all;
+}
+
+.provide .provide-items {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+.provide .provide-items .item {
+    width: 275px;
+}
+
+.provide .provide-items .item h3 {
+    font-size: 24px;
+}
+
+.provide .divider {
+    height: 1px;
+    width: 1250px;
+    background-color: #ececec;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.features {
+    background-color: white;
+    padding: 100px 0;
+    min-height: 920px;
+}
+
+.features .features-text {
+    width: 510px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features .features-text h2 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 55px;
+    margin: 0;
+}
+
+.features .features-text p {
+    color: #424242;
+}
+
+.features .features-text .divider {
+    display: block;
+    margin: 35px auto;
+    background-color: var(--main-color);
+    width: 130px;
+    height: 2px;
+}
+
+.features .section {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.features .section .features-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.features .section .features-menu .link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--text-color);
+    transition: 0.4s all;
+}
+
+.features .section .features-menu .link:hover {
+    color: var(--main-color);
+    transition: 0.4s all;
+}
+
+.features .features-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 58px;
+}
+
+.features .features-items .item {
+    width: 290px;
+    height: 295px;
+    background-color: #f5f0dd;
+    margin: 10px;
+}
+
+.team {
+    background-color: white;
+    padding: 0px 0px 100px 0px;
+    min-height: 700px;
+}
+
+.team .team-text {
+    width: 510px;
+}
+
+.team .team-text h2 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 55px;
+    margin: 0;
+}
+
+.team .team-text p {
+    color: #424242;
+}
+
+.team .team-text .divider {
+    display: block;
+    margin: 35px 0;
+    background-color: var(--main-color);
+    width: 130px;
+    height: 2px;
+}
+
+.team .team-multimedia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .team-multimedia .team-img {
+    width: 322px;
+    height: 462px;
+    background-color: #f5f0dd;
+}
+
+.team .team-multimedia .team-member {
+    width: 822px;
+}
+
+.team .team-multimedia .team-member h3 {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.team .team-multimedia .team-member p {
+    width: 650px;
+    color: var(--text-color);
+}
+
+.team .team-multimedia .team-member .socials {
+    display: flex;
+    width: 360px;
+    list-style-type: none;
+    padding: 0;
+    margin: 80px 0 0 0;
+    justify-content: space-between;
+}
+
+.team .team-multimedia .team-member .socials li {
+    font-style: italic;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.team .team-multimedia .team-member .galery {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team .team-multimedia .team-member .galery .item {
+    width: 197px;
+    height: 210px;
+    background-color: #f5f0dd;
+    position: relative;
+}
+
+.team .team-multimedia .team-member .galery .item::after {
+    content: "";
+    background-color: #7a786e;
+    color: white;
+    position: absolute;
+    width: 197px;
+    height: 0%;
+    bottom: 0;
+    transition: 0.4s all;
+}
+
+.team .team-multimedia .team-member .galery .item:hover::after {
+    height: 20%;
+    transition: 0.4s all;
+}
+
+.subscribe {
+    padding: 140px 75px;
+    min-height: 225px;
+    background-color: #f5f0dd;
+    text-align: center;
+    color: white;
+}
+
+.subscribe h2 {
+    font-size: 42px;
+}
+
+.subscribe .subscribe-text {
+    margin-top: 65px;
+}
+
+.subscribe .subscribe-text #email {
+    width: 485px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+}
+
+.subscribe .subscribe-text button {
+    width: 210px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-align: center;
+    line-height: 53px;
+    height: 80px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s all;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.subscribe .subscribe-text button:hover {
+
+    transition: 0.4s all;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.get-in-touch {
+    min-height: 770px;
+    padding: 100px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+
+.get-in-touch .get-in-touch-text h2 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 55px;
+    margin: 0;
+}
+
+.get-in-touch .get-in-touch-text p {
+    color: #424242;
+    width: 720px;
+}
+
+.get-in-touch .get-in-touch-text .divider {
+    display: block;
+    margin: 35px 0;
+    background-color: var(--main-color);
+    width: 130px;
+    height: 2px;
+}
+
+.get-in-touch .get-in-touch-info {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.get-in-touch .get-in-touch-info form {
+    width: 740px;
+    margin-top: 50px;
+}
+
+.get-in-touch .get-in-touch-info form #name {
+    margin-right: 50px;
+}
+
+.get-in-touch .get-in-touch-info form #name,
+.get-in-touch .get-in-touch-info form #email {
+    width: 300px;
+    padding: 0 20px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e5e5e5;
+}
+
+.get-in-touch .get-in-touch-info form textarea {
+    width: 695px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e5e5e5;
+    margin-top: 40px;
+}
+
+.get-in-touch .get-in-touch-info form button {
+    width: 732px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-align: center;
+    line-height: 53px;
+    height: 75px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s all;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.get-in-touch .get-in-touch-info form button:hover {
+
+    transition: 0.4s all;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.contact-info {
+    width: 325px;
+    height: 200px;
+    position: absolute;
+    top: 375px;
+    right: 0;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 140px 75px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li {
+    padding-top: 30px;
+    line-height: 24px;
+}
+
+footer {
+    background-color: #313030;
+
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content p {
+    color: white;
+    display: block;
+}
+
+footer .footer-content .socials {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+
+}
+
+footer .socials li a {
+    width: 35px;
+    background-color: white;
+    color: #313030;
+    height: 35px;
+    display: block;
+    border-radius: 50px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.4s all;
+}
+
+footer .socials li a:hover {
+    color: var(--main-color);
+    transition: 0.4s all;
+}
